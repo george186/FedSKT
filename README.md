@@ -1,20 +1,16 @@
 # FedSKT
 
-Official implementation of *"FedSKT: A Selective Knowledge Transfer Scheme for Federated Learning via End-Edge-Cloud Collaboration"*.
-
-## Acknowledgement
-
-This work is developed upon [FedAgg](https://github.com/wuzhiyuan2000/FedAgg) — *Agglomerative Federated Learning: Empowering Larger Model Training via End-Edge-Cloud Collaboration* (INFOCOM 2024). The end-edge-cloud node hierarchy, the autoencoder-based knowledge transfer pipeline and part of the training code are inherited from FedAgg, and FedSKT is built as an improvement on top of it. We thank the FedAgg authors.
+Implementation of the paper *"FedSKT: A Selective Knowledge Transfer Scheme for Federated Learning via End-Edge-Cloud Collaboration"*.
 
 ## Preparation
 
-Requirements: Python 3.9, PyTorch 2.2.2 (CUDA 12.1), torchvision 0.17.2, and one NVIDIA GPU.
+Requirements: Python 3.9, PyTorch 2.2.2 (CUDA 12.1).
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Put CIFAR-10 under `./data`, i.e. `./data/cifar-10-batches-py/`:
+Place the CIFAR-10 dataset under `./data`, i.e. `./data/cifar-10-batches-py/`:
 
 ```bash
 python -c "from torchvision.datasets import CIFAR10; CIFAR10('./data', train=True, download=True)"
@@ -30,7 +26,7 @@ python main_fedagg.py \
     --r 3 --s 2 --T_agg 3
 ```
 
-The test accuracy of the cloud model is printed once per communication round.
+The test accuracy of the cloud model is printed after each communication round.
 
 ## Arguments
 
@@ -45,3 +41,7 @@ The test accuracy of the cloud model is printed once per communication round.
 | `--r` | `3` | Local training iterations per node in each round. |
 | `--s` | `2` | Data-selection ratio: `1/s` of the transmitted samples are used. |
 | `--T_agg` | `3` | Temperature of the knowledge-transfer loss. |
+
+## Reference
+
+The implementation of this work refers to [FedAgg](https://github.com/wuzhiyuan2000/FedAgg): the end-edge-cloud node hierarchy, the autoencoder, and part of the training code are referenced and adopted from FedAgg, while FedSKT introduces selective knowledge transfer (teacher selection and data selection).
