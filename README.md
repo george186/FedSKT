@@ -19,7 +19,7 @@ python -c "from torchvision.datasets import CIFAR10; CIFAR10('./data', train=Tru
 ## Run
 
 ```bash
-python main_fedagg.py \
+python main_fedskt.py \
     --dataset cifar10 --data_dir ./data \
     --client_number 225 --edge_number 15 \
     --comm_round 1000 --batch_size 16 --lr 0.001 \
