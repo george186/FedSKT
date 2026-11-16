@@ -38,7 +38,7 @@ The test accuracy of the cloud model is printed after each communication round.
 | `--comm_round` | `1000` | Number of communication rounds. |
 | `--batch_size` | `16` | Batch size. |
 | `--lr` | `0.001` | Local learning rate. |
-| `--r` | `3` | Local training iterations per node in each round. |
+| `--r` | `3` | Knowledge-distillation rounds between nodes in each round. |
 | `--s` | `2` | Data-selection ratio: `1/s` of the transmitted samples are used. |
 | `--T_agg` | `3` | Temperature of the knowledge-transfer loss. |
 
