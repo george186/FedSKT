@@ -1,0 +1,34 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ---- Datasets & checkpoints ----
+# CIFAR-10 is downloaded/placed here at runtime (cifar-10-batches-py/)
+data/
+*.pth
+*.pt
+*.ckpt
+runs/
+outputs/
+logs/
+*.log
+
+# ---- Editors / OS ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ---- Local agent / tooling state ----
+.dsh-artifacts/
+.mcp.json
+
+# ---- Local AI-assistant settings ----
+.claude/
