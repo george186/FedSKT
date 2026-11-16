@@ -10,8 +10,10 @@ dist/
 .eggs/
 
 # ---- Datasets & checkpoints ----
-# CIFAR-10 is downloaded/placed here at runtime (cifar-10-batches-py/)
-data/
+# CIFAR-10 is placed in ./data/cifar-10-batches-py/ at runtime;
+# only the placeholder that keeps the folder is tracked
+data/*
+!data/.gitkeep
 *.pth
 *.pt
 *.ckpt
