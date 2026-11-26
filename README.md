@@ -45,3 +45,22 @@ The test accuracy of the cloud model is printed after each communication round.
 ## Reference
 
 The implementation of this work refers to [FedAgg](https://github.com/wuzhiyuan2000/FedAgg): the end-edge-cloud node hierarchy, the autoencoder, and part of the training code are referenced and adopted from FedAgg, while FedSKT introduces selective knowledge transfer (teacher selection and data selection).
+
+## Citation
+
+If you find this work useful, please consider citing it:
+
+```bibtex
+@article{qiao2027fedskt,
+  title   = {FedSKT: A Selective Knowledge Transfer Scheme for Federated Learning via End-Edge-Cloud Collaboration},
+  author  = {Qiao, Zhi and Xue, Junxiao and Liu, Zhiquan and Yu, Fei and Zhang, Pengfei and Shi, Lei},
+  journal = {Information Fusion},
+  volume  = {140},
+  pages   = {104993},
+  year    = {2027},
+  doi     = {10.1016/j.inffus.2026.104993}
+}
+```
+
+Published version: [Information Fusion, vol. 140, 104993 (2027)](https://doi.org/10.1016/j.inffus.2026.104993)
+
