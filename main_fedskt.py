@@ -2,13 +2,10 @@ import os
 os.environ['CUDA_LAUNCH_BLOCKING'] = '0'
 import argparse
 import logging
-import os
 import numpy as np
 import torch
 from model_zoo import create_model
-import argparse
 from fedskt import run_fedskt
-from model_zoo import create_model
 from data_loader import load_partition_data_cifar10
 import random
 import gc

@@ -4,7 +4,6 @@ from PIL import Image
 from matplotlib import pyplot as plt
 from torchvision.utils import save_image
 import torchvision.transforms as transforms
-import numpy as np
 from autoencoder_pretrained import create_autoencoder
 from utils import KL_Loss,CE_Loss
 from torch import nn
